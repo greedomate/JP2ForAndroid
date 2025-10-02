@@ -24,9 +24,12 @@
 **Solution**: Remove Bintray plugin dependency and replace jcenter() repositories with mavenCentral()
 
 **Changes Made**:
-- Line 12: Commented out `classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.7.3'`
-- Line 7: Replaced `jcenter()` with `mavenCentral()` in buildscript repositories
-- Line 22: Replaced `jcenter()` with `mavenCentral()` in allprojects repositories
+- `build.gradle` (root project):
+  - Line 12: Commented out `classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.7.3'`
+  - Line 7: Replaced `jcenter()` with `mavenCentral()` in buildscript repositories
+  - Line 22: Replaced `jcenter()` with `mavenCentral()` in allprojects repositories
+- `library/build.gradle` (library module):
+  - Line 4: Commented out `apply plugin: 'com.jfrog.bintray'`
 
 ## Rationale
 These changes enable successful JitPack builds by:
