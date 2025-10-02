@@ -1,0 +1,4 @@
+include ':jp2-android'
+// include ':testapp'
+project(':jp2-android').projectDir = new File('library')
+
