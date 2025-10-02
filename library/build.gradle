@@ -89,4 +89,4 @@ ext {
     allLicenses = ["BSD-2-Clause"]
 }
 
-apply from: 'bintray.gradle'
+// Removed: apply from: 'bintray.gradle' (Bintray discontinued 2021)

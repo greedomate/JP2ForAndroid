@@ -30,6 +30,9 @@
   - Line 22: Replaced `jcenter()` with `mavenCentral()` in allprojects repositories
 - `library/build.gradle` (library module):
   - Line 4: Commented out `apply plugin: 'com.jfrog.bintray'`
+  - Line 92: Commented out `apply from: 'bintray.gracle'`
+- `library/bintray.gradle` (library module):
+  - **DELETED** entire file (contained Bintray publishing configuration that's no longer needed)
 
 ## Rationale
 These changes enable successful JitPack builds by:
